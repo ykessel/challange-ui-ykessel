@@ -1,0 +1,10 @@
+[
+  { "id": "vitaminas", "label": "Vitaminas", "icon": "Pill" },
+  { "id": "analgesicos", "label": "Analgésicos y antiinflamatorios", "icon": "Bone" },
+  { "id": "antiinfecciosos", "label": "Antiinfecciosos", "icon": "ShieldPlus" },
+  { "id": "mucoliticos", "label": "Mucolíticos y antitusivos", "icon": "Baby" },
+  { "id": "antiulcerosos", "label": "Antiulcerosos y antiácidos", "icon": "PillIcon" },
+  { "id": "antidiarreicos", "label": "Antidiarreicos y laxantes", "icon": "Syringe" },
+  { "id": "antipireticos", "label": "Antipiréticos", "icon": "ThermometerSun" },
+  { "id": "antialergicos", "label": "Antialérgicos", "icon": "HeartPulse" }
+]

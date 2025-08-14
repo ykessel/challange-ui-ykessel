@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "Luvit Ampolla inyectable",
+    "description": "Ampollas estériles de uso inyectable.",
+    "priceMajor": 1,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/0b622c09fbbbc8035b792f2f85a99816bb2145c2.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Vitamina B, Nicotinamida",
+    "description": "Tabletas de complejo B para energía diaria.",
+    "priceMajor": 25,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/2192cf89d893b670afdea9217696f354859ddc36.png",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Neurobion",
+    "description": "Complejo B en tabletas recubiertas.",
+    "priceMajor": 10,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/247646cc5b5884363205f8d9feab7df4a844b91c.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Gerber GOM MAST",
+    "description": "Suplemento infantil con vitaminas.",
+    "priceMajor": 10,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/30a9d05b6114b0028b05b5d729e7046c7c0e7576.png",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "5",
+    "title": "Mentol Chino 500g",
+    "description": "Ungüento con mentol de uso tópico.",
+    "priceMajor": 12,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/4650121107345f15437ce8bd84b3503e8c5d6867.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Neuressens",
+    "description": "Cápsulas para bienestar nervioso.",
+    "priceMajor": 75,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/5766a84ce92add9e15800b71e789308d96616fee.png",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Medox ABC Jarabe",
+    "description": "Jarabe multivitamínico para adultos.",
+    "priceMajor": 25,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/609055d902e67497e99785ec1309b21d1c55abac.jpg",
+    "badge": {
+      "text": "-50%",
+      "color": "orange"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Dominal, Paracetamol 500g",
+    "description": "Analgésico y antipirético de confianza.",
+    "priceMajor": 26,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/6f32fd96c0bc13645b628bd1502fcff99294dd8e.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Diflox",
+    "description": "Tabletas recubiertas de uso oral.",
+    "priceMajor": 75,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/869d46c7d02b4175cf919f01eae087db63f81ce5.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  },
+  {
+    "id": "10",
+    "title": "Analgán Rapid Paracetamol",
+    "description": "Rápido alivio del dolor y la fiebre.",
+    "priceMajor": 75,
+    "priceMinor": 50,
+    "imageUrl": "/images/products/9915b6937c8e18010d04858442e117d119cf061d.jpg",
+    "badge": {
+      "text": "Nuevo",
+      "color": "yellow"
+    }
+  }
+]
