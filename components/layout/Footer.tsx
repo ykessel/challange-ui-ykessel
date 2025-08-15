@@ -21,10 +21,10 @@ export function Footer({className = ""}: { className?: string }) {
                 <div className="grid gap-8 md:grid-cols-2">
                     {/* Left: copy and contact */}
                     <div>
-                        <h3 className="text-white font-extrabold text-xl sm:text-2xl leading-snug">
+                        <h2 className="text-white font-extrabold text-xl sm:text-2xl leading-snug">
                             {"Suscríbete aquí para conocer"} <br className="hidden sm:block"/>
                             {"más de nuestras ofertas"}
-                        </h3>
+                        </h2>
                         <p className="mt-2 text-white/80 text-sm max-w-prose">
                             Regístrate ahora para recibir las últimas actualizaciones sobre promociones y cupones.{" "}
                             {"No te preocupes, no enviamos spam!"}

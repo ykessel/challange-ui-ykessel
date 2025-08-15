@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getCategories, getProducts } from "@/lib/data";
 import type { Category } from "@/types/Category";
 import type { Product } from "@/types/Product";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import ProductCard from "@/components/home/product-card";
@@ -11,6 +12,27 @@ export const revalidate = 300;
 type PageProps = {
   params: { id: string };
 };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const categories = await getCategories() as Category[];
+  const category = categories.find((c) => c.id === params.id);
+  
+  if (!category) {
+    return {
+      title: "Categoría no encontrada | Botifarma",
+      description: "La categoría que buscas no está disponible en Botifarma.",
+    };
+  }
+
+  return {
+    title: `${category.label} | Botifarma`,
+    description: `Encuentra los mejores productos de ${category.label.toLowerCase()} en Botifarma. Calidad garantizada y entrega rápida.`,
+    openGraph: {
+      title: `${category.label} | Botifarma`,
+      description: `Encuentra los mejores productos de ${category.label.toLowerCase()} en Botifarma.`,
+    },
+  };
+}
 
 export default async function CategoryDetailPage({ params }: PageProps) {
   const [categories, products] = await Promise.all([

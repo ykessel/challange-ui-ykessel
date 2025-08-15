@@ -9,20 +9,22 @@ export function GoToCatalogSection() {
                     src="/images/catalog.png"
                     alt=""
                     aria-hidden
-                    width={800}
+                    width={400}
                     height={120}
                     priority
                     className="hidden md:block pointer-events-none select-none absolute inset-y-0 right-0 h-full w-auto object-cover"
+                    sizes="(min-width: 768px) 400px"
                 />
                 {/* Background image: mobile */}
                 <Image
                     src="/images/catalog-mobil.png"
                     alt=""
                     aria-hidden
-                    width={600}
+                    width={300}
                     height={160}
                     priority
                     className="md:hidden pointer-events-none select-none absolute inset-y-0 right-0 h-full w-auto object-contain"
+                    sizes="(max-width: 767px) 300px"
                 />
 
                 {/* Text content */}
