@@ -22,12 +22,12 @@ export function SectionContainer({
 }: SectionContainerProps) {
     return (
         <section className={cn(
-            "py-4 sm:py-6",
+            "py-6 sm:py-8 lg:py-10",
             backgroundClasses[background],
             className
         )}>
             <div className={cn(
-                "mx-auto px-4 sm:px-6 lg:px-8",
+                "mx-auto px-4 sm:px-6 lg:px-8 max-w-[1440px]",
                 containerClassName
             )}>
                 {children}

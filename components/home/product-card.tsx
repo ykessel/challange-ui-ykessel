@@ -87,7 +87,7 @@ export default function ProductCard({product}: { product: Product }) {
             {/* Details area */}
             <CardContent className="p-0">
                 <div className="bg-[#f4f6fb]">
-                    <div className="px-5 pt-1">
+                    <div className="px-4 sm:px-5 pt-1">
                         {/* Price */}
                         <PriceCard amount={amount}/>
 
@@ -99,7 +99,7 @@ export default function ProductCard({product}: { product: Product }) {
                         </h3>
 
                         {/* Rating */}
-                        <div className="mt-6 flex items-center gap-1.5">
+                        <div className="mt-4 sm:mt-6 flex items-center gap-1.5">
                             {stars.map((s) => (
                                 <button
                                     key={s}
@@ -121,7 +121,7 @@ export default function ProductCard({product}: { product: Product }) {
                     </div>
 
                     {/* Footer controls */}
-                    <div className="px-5 pt-2 pb-4 flex items-center gap-3">
+                    <div className="px-4 sm:px-5 pt-2 pb-4 flex items-center gap-2 sm:gap-3">
                         {/* Quantity stepper */}
                         <div className="flex items-center rounded-md bg-white">
                             <Button

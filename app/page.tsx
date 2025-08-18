@@ -39,17 +39,21 @@ export default async function Home() {
     return (
         <div className="bg-background">
             <Header/>
-            <main className={'flex flex-col justify-center max-w-[1440px] mx-auto'}>
-                <BannerSection/>
-                <CategoriesSection/>
-                <GoToCatalogSection/>
-                <RecommendSection products={products}/>
-                <BannerCardSection/>
-                <DynamicMostSoldSection products={products}/>
+            <main className="flex flex-col">
+                <div className="flex flex-col justify-center max-w-[1440px] mx-auto w-full">
+                    <BannerSection/>
+                    <CategoriesSection/>
+                    <GoToCatalogSection/>
+                    <RecommendSection products={products}/>
+                    <BannerCardSection/>
+                    <DynamicMostSoldSection products={products}/>
+                </div>
                 <InfoSection/>
-                <DynamicMostRecentSection products={products}/>
-                <DiscountSection/>
-                <GoToProductsSection/>
+                <div className="flex flex-col justify-center max-w-[1440px] mx-auto w-full">
+                    <DynamicMostRecentSection products={products}/>
+                    <DiscountSection/>
+                    <GoToProductsSection/>
+                </div>
             </main>
             <Footer/>
         </div>
