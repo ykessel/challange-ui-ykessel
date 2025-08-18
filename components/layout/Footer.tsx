@@ -80,12 +80,12 @@ export function Footer({className = ""}: { className?: string }) {
             {/* Mobile Layout */}
             <div className="lg:hidden max-w-[1440px] mx-auto">
                 {/* Top: Subscription Form */}
-                <div className="text-center mb-8">
-                    <h2 className="text-white font-bold text-xl leading-snug mb-4">
+                <div className="text-left mb-8">
+                    <h2 className="text-white font-bold text-xl leading-snug mb-4 text-left">
 {"Subscríbete aquí para conocer"}<br/>{"más de nuestras ofertas"}
                     </h2>
-                    <p className="text-white/80 text-sm mb-6">
-{"Regístrese ahora para recibir las últimas actualizaciones sobre "}<br/>{"promociones y cupones. ¡No te preocupes, no enviamos spam!"}
+                    <p className="text-white/80 text-sm mb-6 text-left">
+{"Regístrese ahora para recibir las últimas actualizaciones sobre  promociones y cupones. ¡No te preocupes, no enviamos spam!"}
                     </p>
 
                     <div className="flex w-full max-w-[520px] items-center mx-auto mb-4">
@@ -125,8 +125,8 @@ export function Footer({className = ""}: { className?: string }) {
 
                 {/* Bottom: Contact Information */}
                 <div className="text-center">
-                    <div className="grid gap-6">
-                        <div className="flex items-start gap-3 justify-center">
+                    <div className="flex flex-col gap-6 items-start">
+                        <div className="flex items-center gap-3 justify-center">
                             <Phone className="mt-0.5 size-5 text-[#f7b500]"/>
                             <div className="text-sm leading-relaxed text-left">
                                 <div className="text-white/80">Lunes a viernes: 08 a. m. a 9 p. m.</div>
@@ -134,7 +134,7 @@ export function Footer({className = ""}: { className?: string }) {
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-3 justify-center">
+                        <div className="flex items-center gap-3 justify-center">
                             <AtSign className="mt-0.5 size-5 text-[#f7b500]"/>
                             <div className="text-sm leading-relaxed text-left">
                                 <div className="text-white/80">¿Necesitas ayuda con tu pedido?</div>
