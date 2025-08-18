@@ -28,7 +28,7 @@ export function Carousel<T>({
     const [canNext, setCanNext] = useState(false)
     const [page, setPage] = useState(0)
     const [pages, setPages] = useState(1)
-    const rafRef = useRef<number>()
+    const rafRef = useRef<number | undefined>(undefined)
 
     const getStep = useCallback(() => {
         const el = scrollerRef.current

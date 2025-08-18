@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function DiscountSection() {
     return (
-        <section className="relative flex items-center h-[85px]">
+        <section className="relative flex items-center h-[85px] bg-background">
             <div className="absolute flex justify-start items-center gap-2 bg-[#F9E2BF] rounded-sm w-full h-[85px] overflow-hidden z-[0]">
                 <div className="left-0 text-center md:text-left ml-8 z-[1]">
                     <h2 className="text-xl md:text-2xl font-bold text-accent mb-1">¡Ahorra en tu

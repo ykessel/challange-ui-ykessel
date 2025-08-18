@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default async function Home() {
     const products = await getProducts() as Product[];
     return (
-        <div>
+        <div className="bg-background">
             <Header/>
             <main className={'flex flex-col justify-center max-w-[1440px] mx-auto'}>
                 <BannerSection/>

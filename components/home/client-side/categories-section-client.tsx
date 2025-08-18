@@ -71,7 +71,7 @@ export function CategoriesSectionClient({
     )), [withIcons, selected, handleSelect]);
 
     return (
-        <section className={cn("bg-[#eaf0fb] py-4 sm:py-6", className)}>
+        <section className={cn("bg-background py-4 sm:py-6", className)}>
             <div className="px-4 sm:px-6 lg:px-8">
                 <h2
                     id={rgId}

@@ -9,7 +9,7 @@ interface SectionContainerProps {
 }
 
 const backgroundClasses = {
-    light: "bg-[#eaf0fb]",
+    light: "bg-background",
     dark: "bg-[#2b3a8a]",
     none: ""
 }

@@ -4,7 +4,7 @@ import Link from "next/link"
 import {useMemo, useState, useCallback} from "react"
 import {Card, CardContent} from "@/components/ui/card"
 import {Button} from "@/components/ui/button"
-import {Heart, Minus, Plus, ShoppingBasket, Star} from 'lucide-react'
+import {Heart, Minus, Plus, Star} from 'lucide-react'
 import {cn} from "@/lib/utils"
 import {Product} from "@/types/Product";
 import {PriceCard} from "@/components/home/price-card";
@@ -153,12 +153,14 @@ export default function ProductCard({product}: { product: Product }) {
                             variant="ghost"
                             onClick={addToCart}
                             aria-label="Agregar al carrito"
-                            className={cn(
-                                "ml-auto h-10 w-10 rounded-full border bg-white",
-                                addedPulse ? "border-blue-500 text-blue-600" : "border-blue-300 text-blue-700"
-                            )}
+                            className="ml-auto rounded-full pr-0"
                         >
-                            <ShoppingBasket className="size-5"/>
+                            <Image
+                                src="/bag.svg"
+                                alt="Agregar al carrito"
+                                width={29}
+                                height={29}
+                            />
                         </Button>
                     </div>
                 </div>

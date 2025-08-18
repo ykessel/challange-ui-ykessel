@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function GoToProductsSection() {
   return (
-      <section className="relative">
+      <section className="relative bg-background">
         <div className="mx-auto px-4 pt-14 pb-10 md:pb-0">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="flex-1 flex justify-center lg:justify-start relative">

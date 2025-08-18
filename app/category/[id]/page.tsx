@@ -10,12 +10,13 @@ import ProductCard from "@/components/home/product-card";
 export const revalidate = 300;
 
 type PageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
   const categories = await getCategories() as Category[];
-  const category = categories.find((c) => c.id === params.id);
+  const category = categories.find((c) => c.id === resolvedParams.id);
   
   if (!category) {
     return {
@@ -35,12 +36,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CategoryDetailPage({ params }: PageProps) {
+  const resolvedParams = await params;
   const [categories, products] = await Promise.all([
     getCategories() as Promise<Category[]>,
     getProducts() as Promise<Product[]>,
   ]);
 
-  const category = categories.find((c) => c.id === params.id);
+  const category = categories.find((c) => c.id === resolvedParams.id);
   if (!category) return notFound();
 
   // Filtrado por categoria si existe, sino heurística por nombre/descripcion
@@ -53,9 +55,9 @@ export default async function CategoryDetailPage({ params }: PageProps) {
   });
 
   return (
-    <div>
+    <div className="bg-background">
       <Header />
-      <main className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <main className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-background">
         <h1 className="text-2xl font-bold text-slate-800">{category.label}</h1>
 
         <div className="mt-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
