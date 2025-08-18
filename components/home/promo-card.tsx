@@ -45,12 +45,14 @@ export async function PromoCard({
                 aria-label={ariaLabel}
             >
                 <Image
-                    src={finalImageSrc}
+                    src={finalImageSrc || "/images/banners/promo-banner.png"}
                     alt={alt}
-                    className="object-cover"
+                    className="object-cover object-center"
                     fill
                     priority={priority}
                     fetchPriority={priority ? "high" : "auto"}
+                    quality={95}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </a>
         </div>

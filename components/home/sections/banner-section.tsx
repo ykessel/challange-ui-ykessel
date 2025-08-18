@@ -21,6 +21,9 @@ export async function BannerSection() {
                         height={heroBanner.height}
                         priority={heroBanner.priority}
                         href={heroBanner.href}
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                        imageClassName="object-cover object-center"
                     />
                 )}
 
