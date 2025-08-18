@@ -10,6 +10,8 @@ interface BannerCardProps {
     href?: string
     children?: React.ReactNode
     priority?: boolean
+    quality?: number
+    sizes?: string
 }
 
 export function BannerCard({ 
@@ -20,7 +22,9 @@ export function BannerCard({
     height = "h-[277px]",
     href,
     children,
-    priority = false
+    priority = false,
+    quality = 95,
+    sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 }: BannerCardProps) {
     const CardWrapper = href ? 'a' : 'div'
     const cardProps = href ? { href } : {}
@@ -41,7 +45,8 @@ export function BannerCard({
                 priority={priority}
                 fetchPriority={priority ? "high" : "auto"}
                 className={imageClassName}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={quality}
+                sizes={sizes}
             />
             {children}
         </CardWrapper>
