@@ -10,12 +10,13 @@ import { Footer } from "@/components/layout/Footer";
 export const revalidate = 300;
 
 type PageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
   const products = (await getProducts()) as Product[];
-  const product = products.find((p) => p.id === params.id);
+  const product = products.find((p) => p.id === resolvedParams.id);
   
   if (!product) {
     return {
@@ -45,16 +46,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ProductDetailPage({ params }: PageProps) {
+  const resolvedParams = await params;
   const products = (await getProducts()) as Product[];
-  const product = products.find((p) => p.id === params.id);
+  const product = products.find((p) => p.id === resolvedParams.id);
   if (!product) return notFound();
 
   const amount = product.precio;
 
   return (
-    <div>
+    <div className="bg-background">
       <Header />
-      <main className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <main className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-background">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-2xl p-4 flex items-center justify-center">
             <Image

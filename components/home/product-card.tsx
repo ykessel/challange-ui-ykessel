@@ -4,7 +4,7 @@ import Link from "next/link"
 import {useMemo, useState, useCallback} from "react"
 import {Card, CardContent} from "@/components/ui/card"
 import {Button} from "@/components/ui/button"
-import {Heart, Minus, Plus, ShoppingBasket, Star} from 'lucide-react'
+import {Heart, Minus, Plus, Star} from 'lucide-react'
 import {cn} from "@/lib/utils"
 import {Product} from "@/types/Product";
 import {PriceCard} from "@/components/home/price-card";
@@ -87,7 +87,7 @@ export default function ProductCard({product}: { product: Product }) {
             {/* Details area */}
             <CardContent className="p-0">
                 <div className="bg-[#f4f6fb]">
-                    <div className="px-5 pt-1">
+                    <div className="px-4 sm:px-5 pt-1">
                         {/* Price */}
                         <PriceCard amount={amount}/>
 
@@ -99,7 +99,7 @@ export default function ProductCard({product}: { product: Product }) {
                         </h3>
 
                         {/* Rating */}
-                        <div className="mt-6 flex items-center gap-1.5">
+                        <div className="mt-4 sm:mt-6 flex items-center gap-1.5">
                             {stars.map((s) => (
                                 <button
                                     key={s}
@@ -121,7 +121,7 @@ export default function ProductCard({product}: { product: Product }) {
                     </div>
 
                     {/* Footer controls */}
-                    <div className="px-5 pt-2 pb-4 flex items-center gap-3">
+                    <div className="px-4 sm:px-5 pt-2 pb-4 flex items-center gap-2 sm:gap-3">
                         {/* Quantity stepper */}
                         <div className="flex items-center rounded-md bg-white">
                             <Button
@@ -153,12 +153,14 @@ export default function ProductCard({product}: { product: Product }) {
                             variant="ghost"
                             onClick={addToCart}
                             aria-label="Agregar al carrito"
-                            className={cn(
-                                "ml-auto h-10 w-10 rounded-full border bg-white",
-                                addedPulse ? "border-blue-500 text-blue-600" : "border-blue-300 text-blue-700"
-                            )}
+                            className="ml-auto rounded-full pr-0"
                         >
-                            <ShoppingBasket className="size-5"/>
+                            <Image
+                                src="/bag.svg"
+                                alt="Agregar al carrito"
+                                width={29}
+                                height={29}
+                            />
                         </Button>
                     </div>
                 </div>

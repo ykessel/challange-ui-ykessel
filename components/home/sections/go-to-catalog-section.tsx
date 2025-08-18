@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export function GoToCatalogSection() {
     return (
-        <section className="relative">
-            <div className="relative mx-4 md:mx-6 rounded-xl md:rounded-xl overflow-hidden bg-[#F9E2BF]">
+        <section className="relative bg-background px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-xl overflow-hidden bg-[#F9E2BF]">
                 {/* Background image: desktop */}
                 <Image
                     src="/images/catalog.png"
