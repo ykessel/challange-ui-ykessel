@@ -7,6 +7,7 @@ import { CategorySearchCombined } from "./client/CategorySearchCombined"
 import { MobileSearch } from "./client/MobileSearch"
 import { MobileNavigation } from "./client/MobileNavigation"
 import { MobileLocationSelector } from "./client/MobileLocationSelector"
+import { fetchCategories } from "@/lib/api"
 
 const navLinks = [
     { href: "#", label: "Catálogo" },
@@ -34,9 +35,8 @@ const havanaMunicipalities = [
     "Playa"
 ]
 
-const categories = ["Vitaminas", "Analgésicos", "Antialérgicos", "Infantiles"]
-
-export function Header() {
+export async function Header() {
+    const categories = await fetchCategories();
     return (
         <header className="w-full bg-white shadow-sm">
             <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">

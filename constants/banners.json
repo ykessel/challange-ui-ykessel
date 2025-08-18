@@ -3,5 +3,59 @@
   "subtitle": "50% de descuentos\n en tus productos favoritos.",
   "heroImage": "/images/products/ab5334df4d815fcebb840289c857158e8ec9dbb0.jpg",
   "rightTopImage": "/images/products/a811ae7ff7496de35df1a45802f51e6f99d527a6.jpg",
-  "rightBottomImage": "/images/products/0b622c09fbbbc8035b792f2f85a99816bb2145c2.jpg"
+  "rightBottomImage": "/images/products/0b622c09fbbbc8035b792f2f85a99816bb2145c2.jpg",
+  "homeBanners": [
+    {
+      "id": "home-banner-1",
+      "src": "/images/banners/home-banner-1.png",
+      "alt": "Hero Home Banner 1",
+      "priority": true,
+      "className": "md:col-span-2",
+      "height": "h-[240px] md:h-[474px]"
+    },
+    {
+      "id": "home-banner-2",
+      "src": "/images/banners/home-banner-2.png",
+      "alt": "Madre dando vitaminas a su hijo en casa",
+      "href": "#",
+      "height": "h-[240px] md:h-[227px]",
+      "className": "bg-[#E79F00]"
+    },
+    {
+      "id": "home-banner-3",
+      "src": "/images/banners/home-banner-3.png",
+      "alt": "Medicamentos y vitaminas a mejor precio",
+      "href": "#",
+      "height": "h-[240px] md:h-[227px]",
+      "className": "bg-white"
+    }
+  ],
+  "bannerCards": [
+    {
+      "id": "banner-1",
+      "src": "/images/banners/banner-1.png",
+      "alt": "Banner 1",
+      "height": "h-[222px]"
+    },
+    {
+      "id": "banner-2",
+      "src": "/images/banners/banner-2.png",
+      "alt": "Banner 2",
+      "height": "h-[222px]"
+    },
+    {
+      "id": "banner-3",
+      "src": "/images/banners/banner-3.png",
+      "alt": "Banner 3",
+      "height": "h-[222px]"
+    }
+  ],
+  "promoBanner": {
+    "id": "promo-banner",
+    "src": "/images/banners/promo-banner.png",
+    "alt": "Promo banner",
+    "ariaLabel": "¡Salud al Mejor Precio!",
+    "href": "#",
+    "className": "relative overflow-hidden rounded-2xl min-h-[200px] sm:min-h-[230px]"
+  }
 }
